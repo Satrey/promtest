@@ -33,5 +33,22 @@
     "vue-cli-plugin-vuetify": "~2.4.2",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.7.0"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satrey/promtest.git"
+  },
+  "keywords": [
+    "Tests",
+    "for",
+    "organization"
+  ],
+  "author": "A.P.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satrey/promtest/issues"
+  },
+  "homepage": "https://github.com/Satrey/promtest#readme"
 }

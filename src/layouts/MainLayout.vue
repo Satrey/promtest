@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-app-bar app color="primary" dark dense>
+    <v-app-bar app color="primary" dark dense clipped-left>
     <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     <v-toolbar-title>{{this.currentRoute}}</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -13,7 +13,7 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-navigation-drawer  app v-model="drawer"  clipped-left="true" class="mt-14">
+    <v-navigation-drawer  app v-model="drawer" dense clipped>
       <!-- <v-list-item class="primary" dark>
         <v-list-item-content>
           <v-list-item-title class="text-h7"> {{ appName }} </v-list-item-title>
@@ -34,8 +34,8 @@
             </v-treeview>
     
     </v-navigation-drawer>
-    <v-footer class="primary"></v-footer>
     <router-view />
+    <v-footer color="primary"  clipped-left app dark dense><h3>This is an footer</h3></v-footer>
   </v-container>
 </template>
 
