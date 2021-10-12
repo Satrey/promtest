@@ -35,7 +35,7 @@
     
     </v-navigation-drawer>
     <router-view />
-    <v-footer color="primary"  clipped-left app dark dense><h3>This is an footer</h3></v-footer>
+    <v-footer app color="primary"  clipped-left dark dense><v-footer-title>This is an footer</v-footer-title></v-footer>
   </v-container>
 </template>
 
