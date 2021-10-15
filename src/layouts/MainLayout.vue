@@ -2,18 +2,18 @@
   <v-container>
     <v-app-bar app color="primary" dark dense clipped-left>
     <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-    <v-toolbar-title>{{this.currentRoute}}</v-toolbar-title>
+    <v-toolbar-title v-model="currentSelected">{{this.currentRoute}}</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+        <v-btn
+            href="https://github.com/vuetifyjs/vuetify/releases/latest"
+            target="_blank"
+            text
+        >
+            <span class="mr-2">Latest Release</span>
+            <v-icon>mdi-open-in-new</v-icon>
+        </v-btn>
     </v-app-bar>
-    <v-navigation-drawer  app v-model="drawer" dense clipped>
+    <v-navigation-drawer  app v-model="drawer" dense clipped >
       <!-- <v-list-item class="primary" dark>
         <v-list-item-content>
           <v-list-item-title class="text-h7"> {{ appName }} </v-list-item-title>
@@ -24,18 +24,15 @@
                 shaped 
                 hoverable 
                 activatable
-                :items="items"
-                                
+                :items="items"                               
             >
                 <template slot="label" slot-scope="props">
                     <router-link tag="div" :to="props.item.url" v-if="props.item.url">{{ props.item.name }}</router-link>
                     <span v-else>{{ props.item.name }}</span>
                 </template>
-            </v-treeview>
-    
+            </v-treeview>   
     </v-navigation-drawer>
     <router-view />
-    <v-footer app color="primary"  clipped-left dark dense><v-footer-title>This is an footer</v-footer-title></v-footer>
   </v-container>
 </template>
 
@@ -46,6 +43,7 @@ export default {
     drawer: 0,
     active: [],
     currentRoute: 'Тестирование по дисциплине ',
+    currentSelected: '',
     items: [
       {
         id: 1,
@@ -91,8 +89,5 @@ export default {
 </script>
 
 <style scoped>
-    #app-bar__container {
-        width: 100px;
-    }
 
 </style>

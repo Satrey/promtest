@@ -18,16 +18,34 @@ const routes = [
     component: () => import('../views/WahTest.vue')
   },
   {
+    path: '/wahlearn',
+    name: 'wahlearn',
+    meta: {layout: 'main-layout'},
+    component: () => import('../views/WahLearn.vue')
+  },
+  {
     path: '/tw',
     name: 'twtest',
     meta: {layout: 'main-layout'},
     component: () => import('../views/TwTest.vue')
   },
   {
+    path: '/twlearn',
+    name: 'twlearn',
+    meta: {layout: 'main-layout'},
+    component: () => import('../views/TwLearn.vue')
+  },
+  {
     path: '/safety',
     name: 'safetytest',
     meta: {layout: 'main-layout'},
     component: () => import('../views/SafetyTest.vue')
+  },
+  {
+    path: '/safetylearn',
+    name: 'safetylearn',
+    meta: {layout: 'main-layout'},
+    component: () => import('../views/SafetyLearn.vue')
   },
   {
     path: '/auth',
