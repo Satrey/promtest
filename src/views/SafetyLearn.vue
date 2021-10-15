@@ -19,7 +19,7 @@
                             :key="question.id"
                         >
                         <v-expansion-panel-header>
-                            {{question.title + ':'}}<em><strong class="ml-2">{{question.question}}</strong></em>
+                            {{question.title + ':'}}<strong class="ml-2">{{question.question}}</strong>
                         </v-expansion-panel-header>
                             <v-expansion-panel-content 
                                 class="pa-2 ma-3 elevation-2 rounded" 
@@ -45,7 +45,7 @@ export default {
         return {
             test: 'Work on height Learning',
             tickets: [],
-            panel  : [ 0,1 ],
+            panel  : [0],
         };
     },
 
