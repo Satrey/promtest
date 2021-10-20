@@ -86,6 +86,7 @@ import axios from "axios";
 
 export default {
   data: () => ({
+    name: 'Охрана труда',
     drawer: false,
     tickets: [],
     questions: [],
